@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="today">
+                <div class="time" id="time_i">
+                    12:00 <span id="am_pm">am</span>
+                </div>
+                <div class="date" id="date_i">
+                    Tuesday, 24 May
+                </div>
+                <div class="today_stats" id="today_stats_i">
+
+                </div>
+            </div>
+            <div class="location">
+                <div class="country" id="country_2">BC/Canada</div>
+                <div class="long_lat" id="long_lat_2">1237</div>
+            </div>
+        </div>
+    </div>
+    <div class="future">
+        <div class="today_weather" id="today_weather_i">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+            <div class="setting">
+                <div class="day">Monday</div>
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+        </div>
+        <div class="upcoming-weather">
+            <div class="day">
+                <div class="day_y">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+            <div class="day">
+                <div class="day_y">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+            <div class="day">
+                <div class="day_y">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+            <div class="day">
+                <div class="day_y">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+            <div class="day">
+                <div class="day_y">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+            <div class="day">
+                <div class="day_y">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="image">
+                <div class="temperature">Night - 25.6&#176; C</div>
+                <div class="temperature">Day - 25.6&#176; C</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

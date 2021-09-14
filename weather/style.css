@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: url(https://images.unsplash.com/photo-1589129143742-374529fb18c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container{
+    padding: 20px 80px;
+    color: white; 
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.today{
+    font-weight: 100;
+}
+.today .time{
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.today #am_pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date{
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.location{
+    text-align: end;
+}
+
+.country{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.long_lat{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.today_stats {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(70, 70, 71, 0.6);
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 2px solid rgb(199, 199, 199);
+    width:110%;
+}
+
+.listy{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.future{
+    background: rgba(41, 40, 40, 0.8);
+    padding: 25px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.future .today_weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.future .today_weather .day{
+    padding:5px 15px;
+    background: rgb(29, 27, 27);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future .today_weather .temperature{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.future .upcoming-weather{
+    display: flex;
+}
+
+.upcoming-weather .day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.upcoming-weather .day .day_y{
+    padding: 5px 17px;
+    background: rgb(29,27,27);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.upcoming-weather .day .temperature{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 750px){
+
+    .container{
+        padding: 20px;
+    }
+    .future{
+        justify-content: start;
+        align-items: none;
+        overflow-y:scroll;
+    }
+    .future .today_weather .temperature{
+        font-size: 25px;
+    }
+    .top .today .time{
+        font-size: 50px;
+    }
+    #am_pm{
+        font-size: 20px;
+    }
+    .top .today .date{
+        font-size: 20px;
+    }
+    .location{
+        text-align: end;
+        margin-top: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .future{
+        justify-content: start;
+        align-items: none;
+        overflow-y:scroll;
+    }
+}
